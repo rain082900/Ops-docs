@@ -1,3 +1,4 @@
-# My Awesome Book
+# 本文档提供基于docker，kubernetes部署科创应用集成平台时经常遇到的问题的解决方案，以及根据以往的部署运维经验总结的一些经验技巧，欢迎一起交流分享。
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+
+
