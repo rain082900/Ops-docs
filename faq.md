@@ -46,7 +46,7 @@
 
 问题描述： 修改docker存储驱动为devicemapper direct-lvm 以后 启动docker报错:Error starting daemon: error initializing graphdriver: devmapper: Base Device UUID and Filesystem verification failed: devicemapper: Error running deviceCreate \(ActivateDevice\) dm\_task\_run failed .
 
-问题分析：[ https://github.com/moby/moby/issues/16344    
+问题分析：[ https://github.com/moby/moby/issues/16344      
 ](https://github.com/moby/moby/issues/16344)
 
 解决过程： 执行 sh -c 'rm -r /var/lib/docker/\*' 重启docker systemctl restart docker
@@ -149,6 +149,8 @@ environment:
 
 解决过程： 把 127.0.0.1   改为service name  即：- KONG\_PG\_HOST=kong-db
 
+---
+
 #### **7.pod内部不能连接外网**
 
 **版本**：K8S/1.5.3，docker/1.13.1
@@ -157,9 +159,9 @@ environment:
 
 有一台主机上的所有pod都不能连接外网**。**
 
- 1.进入容器 `docker exec -it b3da77d4c3e8 /bin/sh`
+1.进入容器 `docker exec -it b3da77d4c3e8 /bin/sh`
 
- 2.ping [www.baidu.com](http://www.baidu.com) 无响应
+2.ping [www.baidu.com](http://www.baidu.com) 无响应
 
 **问题分析**：怀疑容器到主机的网络路由没有联通，验证过程如下：
 
@@ -173,7 +175,7 @@ environment:
 
 手动执行命令 `/sbin/iptables -t nat -I POSTROUTING -s 10.32.0.0/12 -j MASQUERADE`
 
- 问题解决
+问题解决
 
 ---
 
@@ -187,11 +189,11 @@ environment:
 
 1.确认数据库连接信息正确无误
 
- 2.确认网络连接正常
+2.确认网络连接正常
 
- 3.确认防火墙已经关闭
+3.确认防火墙已经关闭
 
- 4.数据库的最大连接数大于当前的连接数 
+4.数据库的最大连接数大于当前的连接数
 
 ```
 SELECT
@@ -221,7 +223,7 @@ WHERE VP.NAME = 'sessions'
 
 第二种 :
 
- 在容器所在机器执行下面命令
+在容器所在机器执行下面命令
 
 rm /dev/random
 
