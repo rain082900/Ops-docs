@@ -3,6 +3,7 @@
 * [简介](README.md)
 * [概览介绍](chapter1.md)
   * [docker简介](chapter1/dockerjian-jie.md)
+  * [kubernetes简介](chapter1/kubernetesjian-jie.md)
 * [常用命令](chang-yong-ming-ling.md)
 * [日常运维](ri-chang-yun-wei.md)
   * [制作docker镜像](ri-chang-yun-wei/zhi-zuo-docker-jing-xiang.md)
