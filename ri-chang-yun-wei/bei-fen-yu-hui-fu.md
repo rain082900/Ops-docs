@@ -43,7 +43,7 @@
 
 ##### 恢复kubernetes集群
 
-1.  把etcd的备份放在对应位置
+1. 把etcd的备份放在对应位置
 2. 重启主节点所在服务器
 
 ##### 恢复nfs数据
@@ -60,7 +60,7 @@
 #进入镜像仓库安装目录
 #先关闭再启动
 docker-compose down
-docker-compose up -d 
+docker-compose up -d
 ```
 
 
