@@ -84,8 +84,6 @@ EXPOSE 对外开发的端口
 
 CMD 容器启动后运行的程序
 
-
-
 > docker 命令参考[ https://docs.docker.com/engine/reference/commandline/cli/](https://docs.docker.com/engine/reference/commandline/cli/)
 >
 > dockerfile 语法参考 [https://docs.docker.com/engine/reference/builder/\#run](https://docs.docker.com/engine/reference/builder/#run)
