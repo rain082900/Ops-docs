@@ -1,6 +1,7 @@
 ### 制作docker镜像
 
-> 这里以制作基于tomcat的应用镜像为例
+docker镜像作为一种标准交付在实际部署运维过程中非常的重要，很多镜像可以在公司镜像仓库或者docker官方镜像仓库下载，有时候也需要我们制作自己的镜像，最常见的场景就是我的项目已经通过maven打成了war包，如何把我的war包变成docker镜像，部署到生产环境呢？  
+下面以制作基于tomcat启动的java工程为例，一步步解析如何制作自己的镜像。
 
 ##### 制作镜像前需要准备
 
@@ -33,8 +34,6 @@ docker build -t IMAGENAME:VERSION .
 ```
 
 执行docker build命令以后，等待运行完成，将会在本机上生成由你命名为“IMAGENAME:VERSION”的 docker镜像，可以通过`docker images` 命令查看。
-
-
 
 > Dockerfile 语法请参见[常用命令](/chang-yong-ming-ling.md)
 
