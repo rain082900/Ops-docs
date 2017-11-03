@@ -42,11 +42,5 @@ sh install.sh {k8s-token}  {主机IP}  {主节点IP}
 >
 > {k8s-token}指部署完k8s主节点以后自动分配的允许接入集群token，可以通过在主节点执行命令 `kubectl -n kube-system get secret clusterinfo -o yaml | grep token-map | awk '{print $2}' | base64 -d | sed "s|{||g;s|}||g;s|:|.|g;s/\"//g;" | xargs echo` 查看
 
-#### 部署k8s主节点
-
-curl -sS [http://s3.c2cloud.cn/k8s-builder/install-master.sh](http://s3.c2cloud.cn/k8s-builder/install-master.sh) \| sh -s  {主机IP}
-
-#### 部署K8S从节点（计算节点）
-
 
 
