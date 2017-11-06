@@ -63,5 +63,9 @@ docker-compose down
 docker-compose up -d
 ```
 
+#### 定期清理应用日志
+
+
+
 
 
