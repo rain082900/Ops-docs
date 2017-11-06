@@ -2,6 +2,8 @@
 
 ### kubernetes简介
 
+Kubernetes始于Google 2014 年的一个项目。 Kubernetes的构建基于Google十多年运行大规模负载产品的经验，同时也吸取了社区中最好的意见和经验。
+
 Kubernetes是一个在集群主机间进行自动化部署、扩展和容器操作的提供以容器为中心基础设施的开源平台。
 
 通过Kubernetes,你可以快速有效地响应用户需求：
@@ -22,5 +24,5 @@ Kubernetes特点:
 * **自愈**
     自动替换，自动重启，自动复制，自动扩展
 
-Kubernetes始于Google 2014 年的一个项目。 Kubernetes的构建基于Google十多年运行大规模负载产品的经验，同时也吸取了社区中最好的意见和经验。
+
 

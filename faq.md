@@ -46,7 +46,7 @@
 
 问题描述： 修改docker存储驱动为devicemapper direct-lvm 以后 启动docker报错:Error starting daemon: error initializing graphdriver: devmapper: Base Device UUID and Filesystem verification failed: devicemapper: Error running deviceCreate \(ActivateDevice\) dm\_task\_run failed .
 
-问题分析：[ https://github.com/moby/moby/issues/16344      
+问题分析：[ https://github.com/moby/moby/issues/16344        
 ](https://github.com/moby/moby/issues/16344)
 
 解决过程： 执行 sh -c 'rm -r /var/lib/docker/\*' 重启docker systemctl restart docker
@@ -251,6 +251,32 @@ Docker从1.13版本开始调整了默认的防火墙规则，禁用了iptables f
 
 ```
 iptables -P FORWARD ACCEPT
+```
+
+---
+
+#### 10.kong日志信息撑爆磁盘，导致进程无法响应
+
+**版本**：K8S/1.5.3 docker/1.13.1 apigateway:0.10.1-v1
+
+**问题描述**： 压力测试过程中发现api网关不响应，分析发现日志把磁盘撑爆
+
+**问题分析: **在大量访问请求环境中需要调整kong的日志访问级别
+
+**解决过程**：
+
+通过挂载的方式修改/usr/local/share/lua/5.1/kong/templates/nginx\_kong.lua文件中access log 和error log的输出级别
+
+```
+location /nginx_status {
+        internal;
+        access_log off;
+        stub_status;
+    }
+```
+
+```
+error_log logs/error.log crit;
 ```
 
 
