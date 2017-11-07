@@ -1,7 +1,6 @@
 # Summary
 
 * [简介](README.md)
-* [概览介绍](chapter1.md)
   * [docker简介](chapter1/dockerjian-jie.md)
   * [kubernetes简介](chapter1/kubernetesjian-jie.md)
 * [常用命令](chang-yong-ming-ling.md)
