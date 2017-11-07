@@ -23,13 +23,13 @@ kubectl get namespace
 查看namespace下的资源
 
 ```
-kubectl get pod/deployment/svc/configmap/pvc/secret/ -n={NAMESPACE_NAME} -o wide
+kubectl get pod/deployment/svc/configmap/pvc/secret -n={NAMESPACE_NAME} -o wide
 ```
 
 查看资源详情\(json/yaml\)格式
 
 ```
-kubectl get pod/deployment/svc/configmap/pvc/secret/ {NAME} -n={NAMESPACE} -o wide -o json/yaml
+kubectl get pod/deployment/svc/configmap/pvc/secret {NAME} -n={NAMESPACE} -o wide -o json/yaml
 ```
 
 查看资源运行状态
@@ -50,11 +50,25 @@ kubectl get logs -f {POD_NAME}
 kubectl  exec -it {POD_NAME} /bin/bash
 ```
 
+通过配置文件新建资源
+
+```
+kubectl create -f xxx.json/yaml
+```
+
+删除资源
+
+```
+kubectl delete pod/deployment/svc/configmap/pvc/secret {NAME} -n={NAMESPACE}
+```
+
 修改资源运行状态（注意：保存退出资源将重启）
 
 ```
-kubectl edit pod/deployment/svc/configmap/pvc/secret/ -n={NAMESPACE_NAME} -o json 
+kubectl edit pod/deployment/svc/configmap/pvc/secret/ -n={NAMESPACE_NAME} -o json
 ```
+
+> [kubernetes官网](https://kubernetes.io/docs/home)
 
 
 
