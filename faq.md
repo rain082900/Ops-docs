@@ -34,7 +34,7 @@
 
 版本： K8S/1.5.3，docker/1.13.1
 
-问题描述：所有节点运行正常，但是集群监控无法显示p点状态。
+问题描述：所有节点运行正常，但是集群监控无法显示节点状态。
 
 解决过程： 经过排查，发现是node节点与master节点时间不同步造成的，用ntp同步时间以后，该节点的监控情况可以正常显示。
 
@@ -44,12 +44,12 @@
 
 版本： docker/1.13.1
 
-问题描述： 修改docker存储驱动为devicemapper direct-lvm 以后 启动docker报错:Error starting daemon: error initializing graphdriver: devmapper: Base Device UUID and Filesystem verification failed: devicemapper: Error running deviceCreate \(ActivateDevice\) dm\_task\_run failed .
+问题描述： 修改docker存储驱动为devicemapper direct-lvm以后启动docker报错:Error starting daemon: error initializing graphdriver: devmapper: Base Device UUID and Filesystem verification failed: devicemapper: Error running deviceCreate \(ActivateDevice\) dm\_task\_run failed .
 
-问题分析：[ https://github.com/moby/moby/issues/16344        
+问题分析：[ https://github.com/moby/moby/issues/16344          
 ](https://github.com/moby/moby/issues/16344)
 
-解决过程： 执行 sh -c 'rm -r /var/lib/docker/\*' 重启docker systemctl restart docker
+解决过程： 执行 `sh -c 'rm -r /var/lib/docker/*'`  然后重启 `systemctl restart docker`
 
 ---
 
@@ -277,6 +277,35 @@ location /nginx_status {
 
 ```
 error_log logs/error.log crit;
+```
+
+---
+
+#### 11.集群内部DNS间歇性不能访问
+
+版本: k8s/1.5.3 docker/1.13.1
+
+问题描述： 部署在集群内部的应用之间通过dns访问时间歇性报错：no hosts found
+
+问题分析：通过 kubectl get pod -n=kube-system 查看kube-dns 发现restar了很多次，很可能是分配内存不足
+
+解决过程：通过kubernetes命令行或者dashboard管控端调整kube-dns的内存使用限制
+
+```
+kubectl edit deployment kube-dns -n=kube-system -o yaml
+```
+
+根据环境调整可以分配的内存
+
+```
+resources:
+          limits:#最大只能分配170M内存
+            memory: 170Mi #请根据实际生产环境调整
+          requests:#最少分配100M内存
+            cpu: 100m
+            memory: 70Mi
+
+
 ```
 
 
