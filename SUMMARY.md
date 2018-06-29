@@ -11,7 +11,7 @@
   * [制作docker镜像](ri-chang-yun-wei/zhi-zuo-docker-jing-xiang.md)
   * [镜像转移](ri-chang-yun-wei/zhuan-yi-jing-xiang.md)
   * [集群扩容](bu-shu-jiao-ben.md)
-  * [备份与恢复](ri-chang-yun-wei/bei-fen-yu-hui-fu.md)
+  * [集群备份与恢复](ri-chang-yun-wei/bei-fen-yu-hui-fu.md)
   * 定期替换license
   * 主机维护
   * 清理非running状态的容器
