@@ -40,5 +40,7 @@ vi 文件
 
 :set ff?
 
-如果提示
+如果提示![](/assets/13.png)
+
+再次输入 :set ff=unix 回车\(Enter\) 即可正常运行脚本文件.
 
