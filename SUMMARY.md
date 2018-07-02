@@ -12,11 +12,11 @@
   * [镜像转移](ri-chang-yun-wei/zhuan-yi-jing-xiang.md)
   * [集群扩容](bu-shu-jiao-ben.md)
   * [集群备份与恢复](ri-chang-yun-wei/bei-fen-yu-hui-fu.md)
-  * 定期替换license
-  * 主机维护
-  * 清理非running状态的容器
-  * 故障快速定位与恢复
-* 命令速查
+  * [替换应用license](ri-chang-yun-wei/ding-qi-ti-huan-license.md)
+  * [主机维护](ri-chang-yun-wei/zhu-ji-wei-hu.md)
+  * [清理非running状态的容器](ri-chang-yun-wei/qing-li-fei-running-zhuang-tai-de-rong-qi.md)
+  * [故障快速定位与恢复](ri-chang-yun-wei/gu-zhang-kuai-su-ding-wei-yu-hui-fu.md)
+* [命令速查](ming-ling-su-cha.md)
 * [集群监控](ji-qun-jian-kong.md)
 * [FAQ](faq.md)
 
