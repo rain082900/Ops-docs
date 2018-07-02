@@ -1,4 +1,6 @@
-1.查看业务应用运行情况（kubelet get pod -n=namespace）
+1.查看业务应用运行情况
+
+kubectlget pod -n=namespace          --namespace为对应租户名称
 
 2.找到不正常pod所在主机
 

@@ -16,3 +16,5 @@
 
 4。定期重启主机
 
+shutdown -r now
+
