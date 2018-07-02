@@ -10,7 +10,7 @@ kubectl get pods -o wide -n=namespace          --namespace为对应租户名称
 
 3.执行命令强制删除container
 
-
+kubectl delete pod podname -n=namespace       ---删除namespace租户下名称是podname的pod
 
 4.检查是否恢复正常
 
