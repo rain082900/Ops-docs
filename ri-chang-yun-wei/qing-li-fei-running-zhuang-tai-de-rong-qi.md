@@ -14,3 +14,5 @@ kubectl delete pod podname -n=namespace       ---删除namespace租户下名称�
 
 4.检查是否恢复正常
 
+Running状态为正常![](/assets/7.png)
+
