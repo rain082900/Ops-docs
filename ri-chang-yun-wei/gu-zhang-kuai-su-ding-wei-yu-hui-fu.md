@@ -28,3 +28,7 @@ docker-compose up -d
 
 修改docker配置文件，忽略https警告
 
+vi /usr/lib/systemd/system/docker.service
+
+ ExecStart=/usr/bin/docker  --insecure-registry 0.0.0.0/0 
+
