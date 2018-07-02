@@ -32,3 +32,13 @@ vi /usr/lib/systemd/system/docker.service; 新增参数
 
 ExecStart=/usr/bin/docker  --insecure-registry 0.0.0.0/0
 
+4.执行脚本文件提示：/bin/bash^M: bad interpreter kube.tar
+
+vi 文件
+
+输入
+
+:set ff?
+
+如果提示
+
