@@ -24,5 +24,7 @@ docker-compose down
 
 docker-compose up -d
 
-3.
+3.docker登录harbor，提示https错误
+
+修改docker配置文件，忽略https警告
 
