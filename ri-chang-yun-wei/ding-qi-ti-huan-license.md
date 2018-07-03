@@ -14,5 +14,5 @@ b. 通知![](/assets/2.png)c.license下载![](/assets/3.png)
 
 d.更新替换license.lic
 
-部署docker服务器主机目录下的/opt/aip-license/conf/license.lic以及/usr/license/license.lic文件， 替换为上面下载的license.lic 文件并且文件名保持一致，替换更新后应用不用重启.ss
+部署docker服务器主机目录下的/opt/aip-license/conf/license.lic以及/usr/license/license.lic文件， 替换为上面下载的license.lic 文件并且文件名保持一致，替换更新后应用不用重启.
 
