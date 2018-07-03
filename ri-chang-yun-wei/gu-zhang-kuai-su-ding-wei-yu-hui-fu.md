@@ -56,3 +56,7 @@ aip\_db\_url=jdbc:oracle:thin:@10.0.203.17:1521:orclpdb  ------------oracle12c�
 
 aip\_db\_url=jdbc:oracle:thin:@192.168.1.24:1521/orclpdb ----------oracle 12c
 
+**7.浏览器访问应用出现报错信息**
+
+chrome浏览器: 按键F12 ,然后重新刷新，查看出现的100-599错误
+
