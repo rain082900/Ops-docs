@@ -66,3 +66,7 @@ chrome浏览器: 按键F12 ,然后重新刷新，查看出现的100-599错误,�
 
 license过期 参考替换应用license 解决.
 
+#### **9.pod无法删除;pod状态为非RUNNING状态**
+
+a.查找pod所在svc服务运行的node节点地址![](/assets/20.png)
+
