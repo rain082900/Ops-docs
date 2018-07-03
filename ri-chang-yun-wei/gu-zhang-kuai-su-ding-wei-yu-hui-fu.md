@@ -68,5 +68,11 @@ license过期 参考替换应用license 解决.
 
 #### **9.pod无法删除;pod状态为非RUNNING状态**
 
-a.查找pod所在svc服务运行的node节点地址![](/assets/20.png)
+a.查找pod所在svc服务运行的node节点地
+
+![](/assets/20.png)b.登录node节点
+
+docker ps \|grep apps-integration![](/assets/21.png)c.删除不正常docker id
+
+docker rm -f docker\_id
 
