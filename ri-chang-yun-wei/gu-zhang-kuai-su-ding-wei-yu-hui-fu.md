@@ -52,5 +52,7 @@ a.确保数据库连接信息配置正确
 
 b.检测oracle数据库版本，如果是12c的 尝试用下面格式
 
-aip\_db\_url=jdbc:oracle:thin:@192.168.1.24:1521/orclpdb
+aip\_db\_url=jdbc:oracle:thin:@10.0.203.17:1521:orclpdb  ------------oracle12c以下
+
+aip\_db\_url=jdbc:oracle:thin:@192.168.1.24:1521/orclpdb ----------oracle 12c
 
