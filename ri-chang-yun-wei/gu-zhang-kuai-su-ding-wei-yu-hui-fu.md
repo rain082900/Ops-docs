@@ -56,7 +56,13 @@ aip\_db\_url=jdbc:oracle:thin:@10.0.203.17:1521:orclpdb  ------------oracle12c�
 
 aip\_db\_url=jdbc:oracle:thin:@192.168.1.24:1521/orclpdb ----------oracle 12c
 
+c.检测应用tomcat有无配置密码随机参数![](/assets/17.jpg)
+
 **7.浏览器访问应用出现报错信息**
 
-chrome浏览器: 按键F12 ,然后重新刷新，查看出现的100-599错误,反馈问题
+chrome浏览器: 按键F12 ,然后重新刷新，查看出现的100-599错误,简单判断反馈问题
+
+**8.应用无法启动 提示**![](/assets/14.png)
+
+license过期 参考替换应用license 解决.
 
