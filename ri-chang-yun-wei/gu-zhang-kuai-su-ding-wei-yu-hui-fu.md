@@ -4,15 +4,21 @@
 
 a.原因 master节点防火墙未关闭
 
-关闭防火墙命令
+master节点关闭防火墙命令
 
-systemctl stop firewalld.service
+`systemctl stop firewalld.service`
 
-systemctl disable firewalld.service
+`systemctl disable firewalld.service`
 
 b.master时间服务器上重启ntpd-server服务
 
-systemctl restart ntpd
+`systemctl restart ntpd`
+
+node节点上执行同步命令:
+
+```
+/usr/sbin/ntpdate master-ip; /sbin/hwclock -w
+```
 
 #### **2.harbor安装提示**![](/assets/12.png)需要在解压后的harbor目录下执行下install.sh
 
