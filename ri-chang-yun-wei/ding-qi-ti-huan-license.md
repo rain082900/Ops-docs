@@ -22,7 +22,7 @@ a. 下载最新license文件
 
 使用个人公司账号 登录并下载![](/assets/3.png)
 
-b.依据项目交付文档中标明的部署服务器地址
+b.依据项目交付文档中标明的部署服务器地址进行license文件更新替换
 
 部署docker服务器主机目录下的/opt/aip-license/conf/license.lic以及/usr/license/license.lic文件， 替换为上面下载的license.lic 文件并且文件名保持一致，替换更新后应用不用重启.
 
