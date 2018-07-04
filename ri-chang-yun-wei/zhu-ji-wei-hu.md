@@ -36,11 +36,11 @@ Avail 一栏值如果小于5G,说明该目录磁盘空间不足了,执行下面�
 
 a.执行清理脚本
 
-* \#清理docker日志
-* \#!/bin/sh
-* echo "==================== start clean docker containers logs =========================="
-* logs=$\(find /var/lib/docker/containers/ -name \*-json.log\)
-* for log in $logs
+* `#清理docker日志`
+* `#!/bin/sh`
+* `echo "==================== start clean docker containers logs =========================="`
+* `logs=$(find /var/lib/docker/containers/ -name *-json.log)`
+* `for log in $logs`
 * ```
       do  
 
@@ -50,17 +50,17 @@ a.执行清理脚本
 
       done
   ```
-* echo "==================== end clean docker containers logs   =========================="
-* \#清理已经停止或者不再使用的docker资源，包括
-* \#- all stopped containers
-* \#- all volumes not used by at least one container
-* \#- all networks not used by at least one container
-* \#- all dangling images
-* docker system prune
-* \#删除所有已停止的容器：
-* docker rm $\(docker ps -a -q\)
-* \#清理未在使用的存储卷：
-* docker volume ls -q \| xargs -r docker volume rm
+* `echo "==================== end clean docker containers logs   =========================="`
+* `#清理已经停止或者不再使用的docker资源，包括`
+* `#- all stopped containers`
+* `#- all volumes not used by at least one container`
+* `#- all networks not used by at least one container`
+* `#- all dangling images`
+* `docker system prune`
+* `#删除所有已停止的容器：`
+* `docker rm $(docker ps -a -q)`
+* `#清理未在使用的存储卷：`
+* `docker volume ls -q | xargs -r docker volume rm`
 
 b. 申请更多资源
 
