@@ -24,29 +24,29 @@ node节点上执行同步命令:
 
 然后执行
 
-docker-compose down
+`docker-compose down`
 
-docker-compose up -d
+`docker-compose up -d`
 
 #### **3.docker登录harbor，提示https错误**
 
 修改docker配置文件，忽略https警告
 
-vi /usr/lib/systemd/system/docker.service; 新增参数
+`vi /usr/lib/systemd/system/docker.service; `新增参数
 
-ExecStart=/usr/bin/docker  --insecure-registry 0.0.0.0/0
+`ExecStart=/usr/bin/docker  --insecure-registry 0.0.0.0/0`
 
 #### **4.执行脚本文件提示：/bin/bash^M: bad interpreter kube.tar**
 
-vi 文件
+`vi 文件`
 
-输入
+`输入`
 
-:set ff?
+`:set ff?`
 
 如果提示![](/assets/13.png)
 
-再次输入 :set ff=unix 回车\(Enter\) 即可正常运行脚本文件.
+再次输入 :`set ff=unix `回车\(Enter\) 即可正常运行脚本文件.
 
 #### **5.部署专有云平台后，需要替换相关应用里环境变量apigateway.admin的域名地址为映射的ip地址和端口.**
 
