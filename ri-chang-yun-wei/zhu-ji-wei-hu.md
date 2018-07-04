@@ -38,7 +38,9 @@ Avail 一栏值如果小于5G,说明该目录磁盘空间不足了,执行下面�
 
 然后在执行
 
-`systemctl status docker`![](/assets/31.png)正常状态.
+`systemctl status docker`
+
+正常状态显示![](/assets/31.png)
 
 查看docker kubelet进程情况:
 
