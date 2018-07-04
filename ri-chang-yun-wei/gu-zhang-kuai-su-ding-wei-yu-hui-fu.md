@@ -1,6 +1,4 @@
-```
-部署过程中常见故障，及定位方法
-```
+### 部署过程中常见故障，及定位方法
 
 #### **1.node节点时间不能与master节点进行时间同步,提示no server suitable for synchronization found**
 
@@ -65,6 +63,4 @@ chrome浏览器: 按键F12 ,然后重新刷新，查看出现的100-599错误,�
 #### **8.应用无法启动 提示**![](/assets/14.png)
 
 license过期 参考替换应用license 解决.
-
-
 
