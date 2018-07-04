@@ -28,9 +28,13 @@ Avail 一栏值如果小于5G,说明该目录磁盘空间不足了,执行下面�
 
 #### **2.查看docker kubelet进程情况**
 
-查看docker日志信息: 
+查看docker日志信息:
 
-`systemctl status docker -l`
+`systemctl status docker`
+
+如果命令一致卡着不动，超过5分钟；判断docker进程已死,执行重启docker命令:
+
+`systemctl restart docker`
 
 查看docker kubelet进程情况:
 
