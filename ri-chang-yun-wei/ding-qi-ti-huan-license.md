@@ -14,6 +14,8 @@ d.点击上传License许可,输入备注信息，上传license文件
 
 ![](/assets/22.png)
 
+e.上传后刷新页面，出现之前填写的备注信息，替换license更新成功![](/assets/23.png)
+
 #### **2.针对run.sh部署的项目，通过本地目录替换**
 
 a.进入公司网站,下载划红线最新license
