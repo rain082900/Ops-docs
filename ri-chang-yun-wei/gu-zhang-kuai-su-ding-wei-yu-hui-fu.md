@@ -20,6 +20,10 @@ node节点上执行同步命令:
 /usr/sbin/ntpdate master-ip; /sbin/hwclock -w
 ```
 
+![](/assets/30.png)
+
+offset 数值在0.00xxx值为正常，超过0.01，重新执行一次上面命令.
+
 **2.harbor安装提示**![](/assets/12.png)需要在解压后的harbor目录下执行下install.sh
 
 然后执行
