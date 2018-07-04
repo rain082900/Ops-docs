@@ -26,3 +26,5 @@ b.依据项目交付文档中标明的部署服务器地址进行license文件�
 
 部署docker服务器主机目录下的/opt/aip-license/conf/license.lic以及/usr/license/license.lic文件， 替换为上面下载的license.lic 文件并且文件名保持一致，替换更新后应用不用重启.
 
+c.更新后应用点击无报错，完成更新. 
+
