@@ -84,3 +84,11 @@ license过期 参考替换应用license 解决.
 
 解决恢复： 同步node节点与master节点的时间，保持一致.
 
+node节点上执行同步命令:
+
+```
+/usr/sbin/ntpdate master-ip; /sbin/hwclock -w
+```
+
+
+
