@@ -1,12 +1,16 @@
 #### **1.通过部署平台替换**
 
-a.依据项目交付文档中标明的应用部署平台地址，打开应用部署平台，找到许可管理
+a.下载最新license文件
 
- ![](/assets/D8TWT5~MFPQQ3`{E_LKSEJF.png)
+使用个人公司账号 登录并下载![](/assets/3.png)
 
-b.管理当前租户共用的许可凭证 上传license许可![](/assets/TIM图片20180702094121.png)
+b.依据项目交付文档中标明的应用部署平台地址，打开应用部署平台，找到许可管理
 
-c.点击上传License许可,输入备注信息，上传license文件
+![](/assets/D8TWT5~MFPQQ3`{E_LKSEJF.png)
+
+c.管理当前租户共用的许可凭证 上传license许可![](/assets/TIM图片20180702094121.png)
+
+d.点击上传License许可,输入备注信息，上传license文件
 
 ![](/assets/22.png)
 
