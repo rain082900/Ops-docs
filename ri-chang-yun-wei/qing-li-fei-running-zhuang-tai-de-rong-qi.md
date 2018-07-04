@@ -18,5 +18,9 @@ a.登录node节点,查找应用表示命令:
 
 #### **4.检查是否恢复正常**
 
+检测命令:
+
+`kubectl get pod -n=namespace  --namespace为对应租户名称`
+
 Running状态为正常![](/assets/7.png)
 
