@@ -22,7 +22,13 @@ linux下获取占用内存资源最多的10个进程命令:
 
 linux 下 取进程占用 cpu 最高的前10个进程命令：
 
-`ps aux|head -1;ps aux|grep -v PID|sort -rn -k +3|head`![](/assets/33.png)
+`ps aux|head -1;ps aux|grep -v PID|sort -rn -k +3|head`![](/assets/33.png)查看这些进程是否为正常应用进程，如果为正常进程，此时申请增加主机CPU；
+
+如果为非正常进程，结束掉该进程，使用命令
+
+`kill -9 $PID`
+
+然后在重复 linux 下 取进程占用 cpu 最高的前10个进程命令命令，核查cpu使用情况.
 
 查看磁盘空间命令:
 
