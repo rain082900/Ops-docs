@@ -93,6 +93,7 @@ node节点上执行同步命令:
 
 ```
 /usr/sbin/ntpdate master-ip; /sbin/hwclock -w
+echo "0 * * * * root /usr/sbin/ntpdate master-ip; /sbin/hwclock -w" >> /etc/crontab
 ```
 
 ![](/assets/30.png)
