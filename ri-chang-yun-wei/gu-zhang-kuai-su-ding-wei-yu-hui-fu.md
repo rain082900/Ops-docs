@@ -1,3 +1,9 @@
+### 
+
+### 
+
+### 
+
 ### 部署过程中常见故障，及定位方法
 
 ##### **1.node节点时间不能与master节点进行时间同步,提示no server suitable for synchronization found**
@@ -117,4 +123,6 @@ offset 数值小于0.00xxx值为正常，超过0.01，重新执行一次上面�
 输入新增的ip地址保存.
 
 ![](/assets/41.png)
+
+chrome浏览器 清除1天内缓存，重新登录使用.
 
