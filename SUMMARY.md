@@ -16,6 +16,8 @@
   * [主机维护](ri-chang-yun-wei/zhu-ji-wei-hu.md)
   * [清理非running状态的容器](ri-chang-yun-wei/qing-li-fei-running-zhuang-tai-de-rong-qi.md)
   * [故障快速定位与恢复](ri-chang-yun-wei/gu-zhang-kuai-su-ding-wei-yu-hui-fu.md)
+  * [通过部署平台管理集群](ri-chang-yun-wei/bu-shu-ping-tai-shi-yong.md)
+  * 通过dashboard管理集群
 * [命令速查](ming-ling-su-cha.md)
 * [集群监控](ji-qun-jian-kong.md)
 * [FAQ](faq.md)
