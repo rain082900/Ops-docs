@@ -54,7 +54,7 @@ docker rm -i {containerID}
 
 切换到容器环境
 
-`docker exec -it mycontainer_name /bin/bash`
+`docker exec -it mycontainer_name /bin/bash `
 
 查看容器信息
 
