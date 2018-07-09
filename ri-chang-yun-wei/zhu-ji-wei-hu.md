@@ -1,6 +1,6 @@
 ### 主机巡检
 
-当集群运行一段时间以后，主机的资源使用情况会发生变化，因此需要制定主机巡检计划，比如每两周检查主机的内存，磁盘，cpu资源是否满足应用正常运行的要求，如果发现资源不足，需要及时处理，保证应用运行环境稳定。
+当集群运行一段时间以后，主机的资源使用情况会发生变化，因此需要制定主机巡检计划，比如**每两周**检查主机的内存，磁盘，cpu资源是否满足应用正常运行的要求，如果发现资源不足，需要及时处理，保证应用运行环境稳定。
 
 ##### **定期查看主机资源使用情况（内存，磁盘,CPU）**
 
@@ -24,7 +24,7 @@ linux 下 取进程占用 cpu 最高的前10个进程命令：
 ps aux|head -1;ps aux|grep -v PID|sort -rn -k +3|head
 ```
 
-![](/assets/33.png)如果发现某进程的CPU占用长时间超过100%，请联系相关开发人员确认问题。
+![](/assets/33.png)如果发现某进程的CPU占用长时间超过100%，如果是应用进程请联系相关开发人员确认问题，如果是其他进程请联系云平台管理员
 
 ##### 查看磁盘空间命令:
 
@@ -39,18 +39,18 @@ df -h
 ```
 #清理docker日志
 #!/bin/sh  
-  
+
 echo "==================== start clean docker containers logs =========================="  
-  
+
 logs=$(find /var/lib/docker/containers/ -name *-json.log)  
-  
+
 for log in $logs  
         do  
                 echo "clean logs : $log"  
                 cat /dev/null > $log  
         done  
-  
-  
+
+
 echo "==================== end clean docker containers logs   =========================="  
 
 #清理已经停止或者不再使用的docker资源，包括
@@ -66,7 +66,11 @@ docker rm $(docker ps -a -q)
 docker volume ls -q | xargs -r docker volume rm
 ```
 
-#### 
+执行脚本
+
+```
+sh clean_disk.sh
+```
 
 #### **2.查看docker kubelet进程情况**
 
