@@ -82,12 +82,6 @@ license过期 参考替换应用license 解决.
 
 ![](/assets/29.png)
 
-![](/assets/29-2.png)
-
-![](/assets/29-1.png)
-
-![](/assets/42.png)
-
 这几种情况都是应用时间服务不同步引起的.
 
 解决恢复： 同步node节点与master节点的时间，保持一致.
