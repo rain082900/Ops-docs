@@ -5,7 +5,7 @@
 * [常用命令](chang-yong-ming-ling.md)
   * [docker常用命令](chang-yong-ming-ling/dockerchang-yong-ming-ling.md)
   * [kubernetes常用命令](chang-yong-ming-ling/kuberneteschang-yong-ming-ling.md)
-  * linux常用命令
+  * [linux常用命令](chang-yong-ming-ling/linuxchang-yong-ming-ling.md)
 * [平台运维](ri-chang-yun-wei.md)
   * [制作docker镜像](ri-chang-yun-wei/zhi-zuo-docker-jing-xiang.md)
   * [镜像转移](ri-chang-yun-wei/zhuan-yi-jing-xiang.md)
