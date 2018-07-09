@@ -34,7 +34,39 @@ df -h
 
 ![](/assets/28.png)
 
-如果可用磁盘空间小于90%,请先执行清理脚本，执行完清理脚本后再检查
+如果可用磁盘空间小于90%,请执行清理脚本clean\_disk.sh,内容如下：
+
+```
+#清理docker日志
+#!/bin/sh  
+  
+echo "==================== start clean docker containers logs =========================="  
+  
+logs=$(find /var/lib/docker/containers/ -name *-json.log)  
+  
+for log in $logs  
+        do  
+                echo "clean logs : $log"  
+                cat /dev/null > $log  
+        done  
+  
+  
+echo "==================== end clean docker containers logs   =========================="  
+
+#清理已经停止或者不再使用的docker资源，包括
+#- all stopped containers
+#- all volumes not used by at least one container
+#- all networks not used by at least one container
+#- all dangling images
+docker system prune
+
+#删除所有已停止的容器：
+docker rm $(docker ps -a -q)
+#清理未在使用的存储卷：
+docker volume ls -q | xargs -r docker volume rm
+```
+
+#### 
 
 #### **2.查看docker kubelet进程情况**
 
