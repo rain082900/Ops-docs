@@ -16,9 +16,7 @@
 * [应用运维](ying-yong-yun-wei.md)
   * [通过部署平台管理集群](ri-chang-yun-wei/bu-shu-ping-tai-shi-yong.md)
   * [通过dashboard管理集群](ri-chang-yun-wei/tong-guodashboard-guan-li-ji-qun.md)
-* [日常巡检](ri-chang-xun-jian.md)
-  * [主机巡检](ri-chang-yun-wei/zhu-ji-wei-hu.md)
-  * [容器巡检](ri-chang-yun-wei/qing-li-fei-running-zhuang-tai-de-rong-qi.md)
+* [日常巡检](ri-chang-yun-wei/zhu-ji-wei-hu.md)
 * [集群监控](ji-qun-jian-kong.md)
 * [FAQ](faq.md)
 
