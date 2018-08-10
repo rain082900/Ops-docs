@@ -46,7 +46,7 @@
 
 问题描述： 修改docker存储驱动为devicemapper direct-lvm以后启动docker报错:Error starting daemon: error initializing graphdriver: devmapper: Base Device UUID and Filesystem verification failed: devicemapper: Error running deviceCreate \(ActivateDevice\) dm\_task\_run failed .
 
-问题分析：[ https://github.com/moby/moby/issues/16344            
+问题分析：[ https://github.com/moby/moby/issues/16344              
 ](https://github.com/moby/moby/issues/16344)
 
 解决过程： 执行 `sh -c 'rm -r /var/lib/docker/*'`  然后重启 `systemctl restart docker`
