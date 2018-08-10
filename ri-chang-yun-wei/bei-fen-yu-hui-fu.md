@@ -35,11 +35,11 @@
 
 ##### 服务网关、动态路由备份
 
-1.登录应用部署平台,找到API网关,选择管理应用
+    1. 登录应用部署平台,找到API网关,选择管理应用
 
 ![](/assets/45.png)2.找到对应的postgreSQL对应的数据端口
 
-![](/assets/46.png)3. 使用navicat工具连接数据库,备份数据.用户名密码都是kong
+![](/assets/46.png) 3.  使用navicat工具连接数据库,备份数据.用户名密码都是kong
 
 ![](/assets/47.png)![](/assets/48.jpg)![](/assets/49.png)![](/assets/50.png)
 
